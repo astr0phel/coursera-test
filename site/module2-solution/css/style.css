@@ -3,32 +3,65 @@
 }
 
 h1 {
+  color: #115d5e;
 	text-align: center;
-	font-family: helvetica, arial, sans-serif;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.75em;
 }
 
-h2 {
-	color: #E9E8E8;
-	background: #000000;
-	padding: 5px;
-	font-family: arial, sans-serif;
-	font-size: 1.25em;
-}
-
 p {
-	border: 1px #000000;
 	padding: 10px;
 	font-family: arial, sans-serif;
 	color: #454444;
-	background: #8A8989;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 45px;
+  margin-bottom: 10px;
 }
 
 .row {
 	width: 100%;
 }
 
-@media (min-width:1200px)  {
+.menuitems{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #8A8989;
+  border: 1px solid black;
+}
+
+.menucat1{
+  color: #e9e8e8;
+  background: #0aa740;
+  padding: 5px;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.25em;
+  float: right;
+  border: 1px solid black;
+}
+
+.menucat2{
+  color: #e9e8e8;
+  background: #139464;
+  padding: 5px;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.25em;
+  float: right;
+  border: 1px solid black;
+}
+
+.menucat3{
+  color: #e9e8e8;
+  background: #0b8284;
+  padding: 5px;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.25em;
+  float: right;
+  border: 1px solid black;
+}
+
+@media (min-width:992px)  {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 	float:left;
 }
@@ -70,10 +103,9 @@ p {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -113,10 +145,11 @@ p {
   }
 }
 	
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
     float: left;
-    border: 1px solid green;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .col-s-1 {
     width: 8.33%;
