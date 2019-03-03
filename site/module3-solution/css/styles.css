@@ -1,0 +1,16 @@
+.menuitems{
+  background: #8A8989;
+  height: 1000px;
+  padding: 10px;
+}
+#nav-list a {
+  color: #115D5E;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #A5A6A6;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
