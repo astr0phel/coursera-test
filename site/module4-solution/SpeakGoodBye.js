@@ -24,3 +24,4 @@ byeSpeaker.speak = function () {
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
 })();
+var byeSpeaker = {};
