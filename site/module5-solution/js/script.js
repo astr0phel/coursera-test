@@ -82,8 +82,8 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         // On first load, show home view
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
-            allCategoriesUrl,
-            function(buildAndShowHomeHTML) {
+            allCategoriesUrl, buildAndShowHomeHTML,
+            function(responseText) {
                 document.querySelector('#main-content')
                     .innerHTML = responseText;
             }, // ***** <---- TODO: STEP 1: Substitute [...] ******
@@ -107,8 +107,10 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 $ajaxUtils.sendGetRequest(
                   chosenCategoryShortName,
                   function (chosenCategoryShortName) {
-                var chosenCategoryShortName = chooseRandomCategory(categories);
-              },
+                var chosenCategoryShortName = chooseRandomCategory(categories
+                  );
+              }
+              
 
 
                 // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -122,8 +124,15 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 // Hint: you need to surround the chosen category short name with something before inserting
                 // it into the home html snippet.
                 //
-              
-                insertProperty("#main-content", randomCategoryShortName, "'" + chosenCategoryShortName + "'");
+                
+                insertProperty(html, "randomCategoryShortName", randomCategoryShortName);
+              dc.loadMenuItems = function() {
+        showLoading("#main-content");
+        $ajaxUtils.sendGetRequest(
+            buildAndShowMenuItemsHTML);
+    }
+
+               
 
 
                 // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
